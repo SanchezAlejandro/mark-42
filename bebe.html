@@ -1,97 +1,249 @@
-<html><title> ale</title>
-    <head>
-        <link
-        rel="stylesheet"
-        type = "text/css"
-        href="./estilo.css">
-    </head>
-    
-    <body>
-        <div id="cabecera">
-            <ul class="nav">
-            <li><a href="./pp.html">Inicio</a></li>
-            <li><a href="">Escolaridad</a>
-                <ul>
-				<li><a href="./kinder.html">K&#237;nder</a></li>
-				<li><a href="./primaria.html">Primaria</a></li>
-				<li><a href="./secundaria.html">Secundaria</a></li>
-				<li><a href="./prepa.html">Preparatoria</a></li>
-                <li><a href="">Universidad</a></li>
-                </ul></li>
-            <li><a href="">Mi persona</a>
-                <ul>
-				<li><a href="./bebe.html">Beb&#233;</a></li>
-				<li><a href="./familia.html">Familia</a></li>
-				<li><a href="./pasatiempos.html">Pasatiempos</a></li>
-				<li><a href="">Pensamientos</a>
-                <ul>
-					<li><a href="">Filosof&#237;a</a></li>
-					<li><a href="">Futuro</a></li>
-                </ul></li>
-            </ul></li>
-            <li><a href="">Contacto</a>
-				<ul>
-				<li><a href="">Facebook</a></li>
-				<li><a href="">N&#250;mero</a>
-                <ul>
-                    <li><a href="">0123456789</a></li>
-                    </ul></li>
-                </ul></li>
-        </ul>
-        
-        </div>
-        
-            
-        <p><br>
-            Nac&#237; en Los Mochis Sinaloa, un 13 de Agosto de 1996.<br>
-            No tengo muchos recuerdos que digamos, lo que recuerdo es que mi madre me dijo alguna vez que, la mayor&#237;a del tiempo me la pasaba dormido, dejo aqu&#237; evidencias.<br></p>
-        
-        <div id = "division">
-            <div>
-            <a href= "./imag/mini/bebeDormido.jpg" > <img src="./imag/mini/bebeDormido.jpg" width="200"> </a></div>
-            
-            <div class="separacion"></div>
+body{
+    background-size:cover;
+    background-color: #C2E1FC;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 40px;
+}
 
-            <div>
-            <a href= "./imag/mini/bebeDormido2.jpg" > <img src="./imag/mini/bebeDormido2.jpg" width="200"> </a></div>
-            
-            <div class="separacion"></div>
-           
-            <div class="efectoAbajoHor effect img">
-                <p class="zero">Él es mi tio Rodrigo, el hermano menor de mi papá.</p>
-            <a href= "./imag/mini/bebeDormido3.jpg" > <img class="top" src="./imag/mini/bebeDormido3.jpg" width="200" height="10"> </a></div> 
-        </div>
-        <br><br>
-        <div id="division">
-            <div>Y cuando me despierto,<br> no se con quien estoy.<br>
-            <a href= "./imag/mini/bebeConfundido.jpg" > <img src="./imag/mini/bebeConfundido.jpg" width="200"><br> </a><br>
-            </div>
-            <div> <p class="separacion"> </p></div>
-            <div>
-            A&#250;n hay m&#225;s.<br>
-            <a href= "./imag/mini/ninoConSueno.jpg" > <img src="./imag/mini/ninoConSueno.jpg" width="200"><br> </a>
-                </div>
-        </div>
-          
-        <div id="division">
-            <div><p>
-            De peque&#241;o me gustaba ponerme los tatuajes que sal&#237;an en las galletas.</p>
-            <div class="efectoAbajoVertical effect img">
-                <p class="zero">Creo que es una se&#241;al.
-                </p>
-            <a href= "./imag/mini/ninoTatuado.jpg" > <img class="top" src="./imag/mini/ninoTatuado.jpg" width="200" height="300"><br> </a>
-            </div>
-        </div>
-            <div class="separacion"></div>
-            <div>
-                <p>Esta fue la &#250;nica pi&#241;ata que me hicieron.<br></p>
-            <div class="efectoAbajoVertical effect img">
-                <p class="zero">
-                A mi me gustaba ver Barnie, por eso la piñata es de ese personaje.</p>
-            
-            <a href= "./imag/mini/pinataDeBarnie.jpg" > <img class="top" src="./imag/mini/pinataDeBarnie.jpg" width="200"><br> </a> 
-            </div>
-            </div>
-        </div>
-    </body>
-</html>
+.nota{padding-left: 10px;}
+.b1{border-bottom: ridge 1px purple;}
+.textoder{text-align: right;}
+.separacion{
+    padding-left: 50px;
+}
+.centrado{
+    text-align: center;
+}
+
+.textoAnimado {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: none;
+    border: 1px;
+    transition-property: width, height, background-color;
+    transition-duration: 0.5s, 0.5s, 0.5s;
+    transition-timing-function: ease, ease-out;
+    transition-delay: 0s ,0.5s, 1s;
+  }
+   .textoanimado:hover {
+      width: 400px;
+      height: 300px;
+      background-color: aliceblue;
+      transition-property: width, height, background-color;
+      transition-duration: 0.5s, 0.5s, 0.5s;
+      transition-timing-function: linear, linear;
+      transition-delay: 0s ,0.5s, 0.5s;
+   }
+
+#cabecera {
+    margin-top: 10px;
+    width:400px;
+    height: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+#contenido {
+  float: left;
+  width: auto;
+}
+#pie {
+    clear: both;
+}
+
+* {
+margin:0px;
+padding:0px;
+}
+
+ul,ol{
+    list-style:none;
+    }
+
+.nav>li{
+    list-style: none;
+    float:left;
+    }
+			
+.nav li a{
+    background-color:7DD2FF;
+	color:#000;
+	text-decoration:none;
+	padding:10px 12px;
+	display:block;
+    }
+			
+.nav li a:hover{
+    background-color:#712782;
+    color: #fff;
+    }
+			
+.nav li ul{
+    display:none;
+	position:absolute;
+	min-width:140px;
+    }
+			
+.nav li:hover > ul {
+    display:block;
+	}
+			
+.nav li ul li {
+    position:relative;
+	}
+			
+.nav li ul li ul {
+    right:-140px;
+	top:0px;
+	}
+
+#division{
+    display:flex;
+    width: auto;
+    height: auto;
+}
+.borde1{
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 1px;
+    padding-left: 10px;
+}
+
+.efectoAbajo {
+    position: relative;
+    width:300px;
+    height:190px;
+    overflow:hidden;
+    float:left;
+    margin-right:20px;
+    background-color:rgba(26,76,110,0.5)
+}
+.efectoAbajo p,.efectoAbajo h2 {
+    color:#fff;
+    padding:10px;
+    left:-20px;
+    top:20px;
+    position:relative
+}
+.efectoAbajo p {
+    font-size:12px;
+    line-height:18px;
+    margin:0
+}
+.efectoAbajo h2 {
+    font-size:10px;
+    line-height:24px;
+    margin:0;
+    font-family:'Lato'
+}
+.effect img {
+    position:absolute;
+    left:0;
+    bottom:0;
+    cursor:pointer;
+    margin:-12px 0;
+    -webkit-transition:bottom .3s ease-in-out;
+    -moz-transition:bottom .3s ease-in-out;
+    -o-transition:bottom .3s ease-in-out;
+    transition:bottom .3s ease-in-out
+}
+.effect img.top:hover {
+    bottom:-96px;
+    padding-top:100px
+}
+h2.zero,p.zero {
+    margin:10px;
+    padding:0
+}
+.efectoAbajoVertical {
+    position: relative;
+    width:200px;
+    height:280px;
+    overflow:hidden;
+    float:left;
+    margin-right:20px;
+    background-color:rgba(26,76,110,0.5)
+}
+.efectoAbajoHor {
+    position: relative;
+    width:200px;
+    height:110px;
+    overflow:hidden;
+    float:left;
+    margin-right:20px;
+    background-color:rgba(26,76,110,0.5)
+}
+.textoblanco{
+    color: white;
+}
+
+.imagen{
+    height: 100px;
+    width: 300px;
+    margin: 15px 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+ 
+.imagen:hover {
+    height: 133px;
+    width: 400px;
+    margin-left: -50px;
+}
+
+.der{
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+#popup {
+   visibility: hidden;
+   opacity: 0;
+   margin-top: -300px;
+}
+ 
+#popup:target {
+   visibility:visible;
+   opacity: 1;
+   background-color: rgba(0,0,0,0.8);
+   position: fixed;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   margin:0;
+   z-index: 999;
+   -webkit-transition:all 1s;
+   -moz-transition:all 1s;
+   transition:all 1s;
+}
+.popup-contenedor {
+   position: relative;
+   margin:7% auto;
+   padding:30px 50px;
+   background-color: #fafafa;
+   color:#333;
+   border-radius: 3px;
+   width:50%;
+}
+a.popup-cerrar {
+   position: absolute;
+   top:3px;
+   right:3px;
+   background-color: #333;
+   padding:7px 10px;
+   font-size: 20px;
+   text-decoration: none;
+   line-height: 1;
+   color:#fff;
+}
