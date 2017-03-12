@@ -8,13 +8,15 @@ body{
 .nota{padding-left: 10px;}
 .b1{border-bottom: ridge 1px purple;}
 .textoder{text-align: right;}
-.anima1{
-    
+.separacion{
+    padding-left: 50px;
 }
 .centrado{
     text-align: center;
 }
-
+.der{
+    padding-left: 550;
+}
 .textoAnimado {
     margin-top: 20px;
     width: 200px;
@@ -99,6 +101,14 @@ ul,ol{
 
 #division{
     display:flex;
+    width: auto;
+    height: auto;
+}
+.borde1{
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 1px;
+    padding-left: 10px;
 }
 
 .efectoAbajo {
@@ -123,7 +133,7 @@ ul,ol{
     margin:0
 }
 .efectoAbajo h2 {
-    font-size:20px;
+    font-size:10px;
     line-height:24px;
     margin:0;
     font-family:'Lato'
@@ -144,8 +154,8 @@ ul,ol{
     padding-top:100px
 }
 h2.zero,p.zero {
-    margin:20px;
-    padding:0
+    margin:10px;
+    padding:20px;
 }
 .efectoAbajoVertical {
     position: relative;
@@ -155,6 +165,9 @@ h2.zero,p.zero {
     float:left;
     margin-right:20px;
     background-color:rgba(26,76,110,0.5)
+}
+.textoblanco{
+    color: white;
 }
 
 .imagen{
@@ -189,7 +202,7 @@ h2.zero,p.zero {
 #popup {
    visibility: hidden;
    opacity: 0;
-   margin-top: -300px;
+   margin-top: -560px;
 }
  
 #popup:target {
@@ -213,8 +226,9 @@ h2.zero,p.zero {
    padding:30px 50px;
    background-color: #fafafa;
    color:#333;
-   border-radius: 3px;
+   border-radius: 20px;
    width:50%;
+   height: ;
 }
 a.popup-cerrar {
    position: absolute;
@@ -226,5 +240,5 @@ a.popup-cerrar {
    text-decoration: none;
    line-height: 1;
    color:#fff;
+   border-radius: 20px;
 }
-
